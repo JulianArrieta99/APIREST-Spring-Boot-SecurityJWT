@@ -1,6 +1,8 @@
 package com.example.restapijwtsecurity.models;
 
 import com.example.restapijwtsecurity.token.Token;
+import com.fasterxml.jackson.annotation.JsonEnumDefaultValue;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -27,25 +29,17 @@ public class User implements UserDetails {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
-    @NotNull
     @Column(name = "email")
     @Email
-    @NotBlank
     private String email;
 
-    @NotNull
     @Column(name = "password")
-    @NotBlank
     private String password;
 
-    @NotNull
-    @NotBlank
     @Column(name = "firstname")
     private String firstname;
 
-    @NotNull
     @Column(name = "lastname")
-    @NotBlank
     private String lastname;
 
 
@@ -53,6 +47,7 @@ public class User implements UserDetails {
     private Role role;
 
     @OneToMany(mappedBy = "user")
+    @JsonIgnore
     private List<Token> tokens;
 
 

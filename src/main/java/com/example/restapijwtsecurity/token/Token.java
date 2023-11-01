@@ -2,8 +2,6 @@ package com.example.restapijwtsecurity.token;
 
 import com.example.restapijwtsecurity.models.User;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
 import lombok.*;
 
 @Getter
@@ -24,7 +22,7 @@ public class Token {
 
     private boolean expired;
 
-    private boolean revoke;
+    private boolean revoked;
 
     @ManyToOne
     @JoinColumn(name = "user_id")

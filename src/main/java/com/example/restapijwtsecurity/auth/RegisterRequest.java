@@ -1,4 +1,4 @@
-package com.example.restapijwtsecurity.controller.auth.dto;
+package com.example.restapijwtsecurity.auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

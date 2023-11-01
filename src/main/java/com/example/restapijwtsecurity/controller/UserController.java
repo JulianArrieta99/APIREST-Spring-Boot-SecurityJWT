@@ -4,10 +4,7 @@ import com.example.restapijwtsecurity.models.User;
 import com.example.restapijwtsecurity.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
@@ -28,16 +25,16 @@ public class UserController {
     }
 
     @GetMapping("/findUserById/{id}")
-    public User findUserById(Long id){
+    public Optional<User> findUserById(@PathVariable Long id){
         return userService.findUserById(id);
     }
 
     @GetMapping("/findUserByEmail/{email}")
-    public User findUserById(String email){
+    public Optional<User> findUserById(String email){
         return userService.findUserByEmail(email);
     }
     @PostMapping("/saveUser")
-    public User saveUser(User user){
+    public User saveUser(@RequestBody User user){
         return userService.saveUser(user);
     }
 }
