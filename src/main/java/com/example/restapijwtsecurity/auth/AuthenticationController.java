@@ -7,6 +7,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
+import org.springframework.core.annotation.Order;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,12 +19,12 @@ import java.io.IOException;
 @RestController
 @RequestMapping("/api/v1/auth")
 @RequiredArgsConstructor
-@Tag(name = "Authentication")
+@Tag(name = "2-Authentication")
 public class AuthenticationController {
 
     private final AuthenticationService authenticationService;
 
-    @Operation(description = "Registra un usuario y obten el jwt token + refresh token",
+    @Operation(description = "Registra un usuario y obten el jwt token + refresh token. El campo 'role' puede ser 'USER', 'MANAGER', o 'ADMIN'",
             responses = {@ApiResponse(description = "Success", responseCode = "200"),
                     @ApiResponse(description = "Unauthorized / Invalid token", responseCode = "403")})
     @PostMapping("/register")
@@ -33,7 +34,7 @@ public class AuthenticationController {
                     "  \"password\": \"examplePassword\",\n" +
                     "  \"firstname\": \"exampleFirstName\",\n" +
                     "  \"lastname\": \"exampleLastName\",\n" +
-                    "  \"role\": \"USER\"  // Can be 'USER', 'MANAGER', or 'ADMIN'\n" +
+                    "  \"role\": \"USER\"\n" +
                     "}") RegisterRequest request
     ){
      return ResponseEntity.ok(authenticationService.register(request));

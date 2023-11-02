@@ -3,11 +3,13 @@ package com.example.restapijwtsecurity.controller;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import org.springframework.core.annotation.Order;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1/manager")
-@Tag(name = "Manager")
+@Tag(name = "3-Manager")
+@Order(3)
 public class ManagerController {
 
     @Operation(description = "Get endpoint de manager (Solo se puede acceder con token de manager o admin)",
