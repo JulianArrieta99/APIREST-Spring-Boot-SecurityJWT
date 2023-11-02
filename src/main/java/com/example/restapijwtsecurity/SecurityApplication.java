@@ -3,23 +3,20 @@ package com.example.restapijwtsecurity;
 import com.example.restapijwtsecurity.auth.AuthenticationService;
 import com.example.restapijwtsecurity.auth.RegisterRequest;
 import com.example.restapijwtsecurity.models.Role;
-import com.example.restapijwtsecurity.models.User;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class RestapiJwtsecurityApplication {
+public class SecurityApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RestapiJwtsecurityApplication.class, args);
+        SpringApplication.run(SecurityApplication.class, args);
     }
 
     @Bean
-    public CommandLineRunner commandLineRunner(
-            AuthenticationService service
-    ){
+    public CommandLineRunner commandLineRunner(AuthenticationService service){
         return args ->{
             var admin = RegisterRequest.builder()
                     .firstname("Admin")
