@@ -1,5 +1,6 @@
 package com.example.restapijwtsecurity.auth;
 
+import com.example.restapijwtsecurity.models.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -14,4 +15,5 @@ public class RegisterRequest {
     private String password;
     private String firstname;
     private String lastname;
+    private Role role;
 }
