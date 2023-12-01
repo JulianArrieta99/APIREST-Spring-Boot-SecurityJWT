@@ -5,13 +5,21 @@ Este proyecto implementa una API RESTful con seguridad basada en JWT, que incluy
 ## Tecnologías Utilizadas
 
 - **Spring Boot:** Marco de desarrollo para Java.
+
 - **Spring Security:** Módulo de seguridad para aplicaciones Spring.
+
 - **Spring Data JPA:** Abstracción de acceso a datos utilizando JPA.
+
 - **Hibernate:** Framework de mapeo objeto-relacional (ORM) que implementa JPA y facilita el trabajo con bases de datos relacionales en Java.
+
 - **JWT (JSON Web Token):** Mecanismo para la creación de tokens seguros.
+
 - **SpringDoc:** Biblioteca para integrar Swagger en proyectos Spring Boot y simplificar la documentación de la API.
+
 - **Lombok:** Biblioteca que agiliza el desarrollo mediante anotaciones.
+
 - **Maven:** Herramienta de gestión de proyectos y construcción de software.
+
 - **PostgreSQL:** Sistema de gestión de bases de datos relacional de código abierto y potente.
 
 ## Tabla de Contenidos
