@@ -126,8 +126,3 @@ Endpoints accesibles solo con un token de administrador.
 
 Explora la documentación de la API con Swagger Docs en [http://15.228.35.127:8081/swagger-ui/index.html](http://15.228.35.127:8081/swagger-ui/index.html).
 
-## Agradecimientos
-
-Quiero compartir el canal de youtube que me ayudo a realizar este proyecto:
-1. **Bouali Ali**
-   - [Canal de YouTube Bouali Ali](https://www.youtube.com/@BoualiAli) - Excepcional contenido sobre Spring Boot en inglés.
