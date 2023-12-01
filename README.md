@@ -1,2 +1,113 @@
-# restapi-jwtsecurity
-proyecto subido a aws http://15.228.35.127:8081/swagger-ui/index.html
+# RestAPI con Seguridad JWT - Documentación
+
+Este proyecto implementa una API RESTful con seguridad basada en JWT, que incluye autenticación, control de acceso basado en roles y gestión de tokens.
+
+## Tabla de Contenidos
+
+1. [Endpoints de Autenticación](#endpoints-de-autenticación)
+2. [Endpoint Public](#endpoint-public)
+3. [Endpoint Manager](#endpoint-Manager)
+4. [Endpoint Admin](#endpoint-Admin)
+5. [Instalación](#instalación)
+6. [Uso](#uso)
+7. [Documentación de Swagger](#documentación-de-swagger)
+8. [Agradecimientos](#agradecimientos)
+
+## Endpoints de Autenticación
+
+### `AuthenticationController`
+
+Este controlador maneja el registro de usuarios, el inicio de sesión y la actualización de tokens.
+
+- **Registrar Usuario:**
+  - Método: `POST`
+  - Ruta: `/api/v1/auth/register`
+  - Descripción: Registra a un usuario y obtiene un token JWT + token de actualización.
+
+- **Iniciar Sesión:**
+  - Método: `POST`
+  - Ruta: `/api/v1/auth/login`
+  - Descripción: Inicia sesión para obtener un token JWT + token de actualización.
+
+- **Actualizar Token:**
+  - Método: `POST`
+  - Ruta: `/api/v1/auth/refresh-token`
+  - Descripción: Utiliza el token de actualización para obtener un nuevo token JWT.
+
+### Ejemplos de Solicitudes
+
+Consulta la documentación de Swagger o Postman para obtener ejemplos detallados de solicitudes.
+
+## Endpoint Público
+
+### `PublicController`
+
+- **Endpoint Público:**
+  - Método: `GET`
+  - Ruta: `/api/v1/public`
+  - Descripción: Accesible por usuarios con cualquier rol (USER, MANAGER, ADMIN).
+
+## Endpoint de Gerente
+
+### `ManagerController`
+
+Endpoints accesibles solo con un token de gerente o administrador.
+
+- **Endpoint GET:**
+  - Método: `GET`
+  - Ruta: `/api/v1/manager`
+
+- **Endpoint POST:**
+  - Método: `POST`
+  - Ruta: `/api/v1/manager`
+
+- **Endpoint PUT:**
+  - Método: `PUT`
+  - Ruta: `/api/v1/manager`
+
+- **Endpoint DELETE:**
+  - Método: `DELETE`
+  - Ruta: `/api/v1/manager`
+
+## Endpoint de Administrador
+
+### `AdminController`
+
+Endpoints accesibles solo con un token de administrador.
+
+- **Endpoint GET:**
+  - Método: `GET`
+  - Ruta: `/api/v1/admin`
+
+- **Endpoint POST:**
+  - Método: `POST`
+  - Ruta: `/api/v1/admin`
+
+- **Endpoint PUT:**
+  - Método: `PUT`
+  - Ruta: `/api/v1/admin`
+
+- **Endpoint DELETE:**
+  - Método: `DELETE`
+  - Ruta: `/api/v1/admin`
+
+## Instalación
+
+1. Clona el repositorio: `git clone https://github.com/JulianArrieta99/restapi-jwtsecurity.git`
+2. Navega al directorio del proyecto: `cd restapi-jwtsecurity`
+3. Compila y ejecuta la aplicación.
+
+## Uso
+
+1. Configura las propiedades de la aplicación según sea necesario.
+2. Accede a la API utilizando herramientas como Postman o tu navegador.
+
+## Documentación de Swagger
+
+Explora la documentación de la API con Swagger Docs en [http://15.228.35.127:8081/swagger-ui/index.html](http://15.228.35.127:8081/swagger-ui/index.html).
+
+## Agradecimientos
+
+Quiero compartir el canal de youtube que me ayudo a realizar este proyecto:
+1. **Bouali Ali**
+   - [Canal de YouTube Bouali Ali](https://www.youtube.com/@BoualiAli) - Excepcional contenido sobre Spring Boot en inglés.
