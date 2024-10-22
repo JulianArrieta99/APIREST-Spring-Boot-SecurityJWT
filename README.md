@@ -116,9 +116,3 @@ Endpoints accesibles solo con un token de administrador.
 2. Navega al directorio del proyecto: `cd restapi-jwtsecurity`
 3. Compila y ejecuta la aplicación.
 
-## Uso
-Para facilitar su uso agregue swagger
-Explicacion basica (hay explicacion por cada endpoint en el link deabajo)
-Usa el endpoint Auth register para registrar un usuario con su respectivo rol y genera su token para acceder a otros endpoints y el token para generar uno nuevo con el endpoint auth refresh token
-http://localhost:8080/swagger-ui/index.html/
-
