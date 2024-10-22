@@ -1,6 +1,6 @@
 # RestAPI con Seguridad JWT - Documentación
 
-Este proyecto implementa una API RESTful con seguridad basada en JWT, que incluye autenticación, control de acceso basado en roles y gestión de tokens.
+Este proyecto implementa una API de accesos con seguridad basada en JWT, que incluye autenticación, control de acceso basado en roles y gestión de tokens.
 
 ## Tecnologías Utilizadas
 
@@ -117,11 +117,8 @@ Endpoints accesibles solo con un token de administrador.
 3. Compila y ejecuta la aplicación.
 
 ## Uso
-
-1. Configura las propiedades de la aplicación según sea necesario.
-2. Accede a la API utilizando herramientas como Postman o tu navegador.
-
-## Documentación de Swagger
-
-Explora la documentación de la API con Swagger Docs en [http://15.228.35.127:8081/swagger-ui/index.html](http://15.228.35.127:8081/swagger-ui/index.html).
+Para facilitar su uso agregue swagger
+Explicacion basica (hay explicacion por cada endpoint en el link deabajo)
+Usa el endpoint Auth register para registrar un usuario con su respectivo rol y genera su token para acceder a otros endpoints y el token para generar uno nuevo con el endpoint auth refresh token
+http://localhost:8080/swagger-ui/index.html/
 
