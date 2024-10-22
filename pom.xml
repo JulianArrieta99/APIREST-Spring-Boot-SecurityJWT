@@ -11,7 +11,7 @@
     <groupId>com.example</groupId>
     <artifactId>restapi-jwtsecurity</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>restapi-jwtsecurity</name>
+    <name>restapi-jwtsecurity-roles</name>
     <description>restapi-jwtsecurity</description>
     <properties>
         <java.version>17</java.version>
