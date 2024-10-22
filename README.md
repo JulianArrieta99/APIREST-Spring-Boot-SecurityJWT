@@ -1,4 +1,4 @@
-# RestAPI con Seguridad JWT - Documentación
+# API con Seguridad JWT - Documentación
 
 Este proyecto implementa una API de accesos con seguridad basada en JWT, que incluye autenticación, control de acceso basado en roles y gestión de tokens.
 
