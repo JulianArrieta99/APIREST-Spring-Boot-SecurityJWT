@@ -1,4 +1,4 @@
-# APIrest con Seguridad JWT - Documentación
+# API REST con Seguridad JWT + gestion de roles - Documentación
 
 Este proyecto implementa una API rest de accesos con seguridad basada en JWT, que incluye autenticación, control de acceso basado en roles y gestión de tokens.
 
