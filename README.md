@@ -18,7 +18,7 @@ Este proyecto implementa una API RESTful con seguridad basada en JWT, que incluy
 
 - **Lombok:** Biblioteca que agiliza el desarrollo mediante anotaciones.
 
-- **Maven:** Herramienta de gestión de proyectos y construcción de software.
+- **Maven:** Herramienta de gestión de dependencias y construcción de software.
 
 - **PostgreSQL:** Sistema de gestión de bases de datos relacional de código abierto y potente.
 
