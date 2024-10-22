@@ -16,8 +16,8 @@ import io.swagger.v3.oas.annotations.servers.Server;
                         email = "julian2arrieta@gmail.com"
                       //  url = ""
                 ),
-                title = "Api Spring security JWT + roles",
-                description = "Api de SpringBoot con Spring security, gestion de roles y tokens con JWT",
+                title = "API rest Spring security JWT + roles",
+                description = "API rest de SpringBoot con Spring security, gestion de token con JWT y roles",
                 version = "1.0"
                // license = @License( name = "License")
                // url =  "url license"
