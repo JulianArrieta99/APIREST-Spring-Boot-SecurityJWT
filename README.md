@@ -31,7 +31,6 @@ Este proyecto implementa una API RESTful con seguridad basada en JWT, que incluy
 5. [Instalación](#instalación)
 6. [Uso](#uso)
 7. [Documentación de Swagger](#documentación-de-swagger)
-8. [Agradecimientos](#agradecimientos)
 
 ## Endpoints de Autenticación
 
